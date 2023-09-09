@@ -82,7 +82,7 @@ def GetChar(str):
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
-	@@ -11,4 +43,4 @@ def home_page():
+def home_page():
     if char_name != "None":
         return json.dumps(GetChar(char_name))
     else:
